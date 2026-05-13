@@ -25,10 +25,12 @@ public class CourseDirect extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet Course Direct at " + request.getContextPath() + "</h1>");
 
+            // 1. Declare
             List<String> list = new ArrayList<String>();
             list.add("1. WCD - Web Components Development - SemIV");
             list.add("2. IDP - Introduction to Dart Programming - SemIV");
 
+            // 2. Data organization
             for (String course : list) {
                 out.print(course + "<br>");
             }
